@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/Nuevo"
+        android:icon="@drawable/ic_dentro"
+        android:title="Nuevo"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/BaseDatos"
+        android:title="Crear BD" />
+
+    <item
+        android:id="@+id/adminis"
+        android:title="Administrar" />
+
+    <item android:id="@+id/item5"
+        android:title="Ajustes"
+        app:showAsAction="never"/>
+</menu>

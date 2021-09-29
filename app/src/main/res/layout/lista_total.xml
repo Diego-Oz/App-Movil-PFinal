@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainCarrito"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Descripcion"
+                android:textSize="13sp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/totalnombre"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/totaldes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/totalnombre"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                tools:text="Nombre"/>
+
+            <TextView
+                android:id="@+id/totalprecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/totaldes"
+                android:drawableLeft="@drawable/ic_money"
+                android:textColor="#FB342D"
+                tools:text="200"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

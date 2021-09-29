@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".InfoActivity"
+    android:background="@color/colorGray">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="370dp"
+        android:id="@+id/firstCardView"
+        android:layout_height="220dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/infofoto"
+                android:src="@drawable/comelona"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infofoto"
+                android:text="Info Nombre"
+                android:textColor="#FF774D"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/infonombre"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:drawableLeft="@drawable/ic_money"
+                android:textColor="#FF774D"
+                android:id="@+id/infoprecio"
+                android:layout_alignRight="@+id/infonombre"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="60dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_below="@+id/infofoto"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        android:id="@+id/secondCardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/firstCardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="95dp"
+                android:id="@+id/menos"
+                android:background="@drawable/ic_menos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/cantidad"
+                android:textSize="25sp"
+                android:layout_toRightOf="@+id/menos"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/mas"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/cantidad"
+                android:background="@drawable/ic_mas"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text=""
+                android:id="@+id/infodes"
+                android:textStyle="italic"
+                android:textSize="15sp"
+                android:layout_below="@+id/cantidad"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/agrecarcar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/infodes"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:text="Agregar al carrito"
+                android:drawableLeft="@drawable/ic_addcarrito"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:backgroundTint="#FF774D" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="310dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="#FFD4C7"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cake Shop and Bakery"
+                android:textSize="13sp"
+                android:layout_marginRight="12dp"
+                android:layout_below="@+id/totalnombre1"
+                android:id="@+id/totaldes1"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/totalnombre1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/carter_one"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:text="GoCake"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fotoyo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/yo">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desarrollador de Software"
+                android:textSize="13sp"
+                android:layout_below="@+id/totalnombre"
+                android:id="@+id/totaldes"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/totalnombre"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_below="@+id/fotoyo"
+                android:text="Diego Ortiz"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Proyecto Final de la materia Introducción al Desarrollo de Apps Móviles con el profesor Freidy Nuñez."
+                android:textSize="13sp"
+                android:layout_below="@+id/totaldes"
+                android:layout_marginTop="5dp"
+                android:id="@+id/totaldes22"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="25dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_callme"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal|bold"
+                android:textSize="17sp"
+                android:text="Call Me"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
